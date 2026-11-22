@@ -12,6 +12,7 @@ assets/style.css    all styles
 assets/app.js       nav, scroll reveal, counters, project rendering
 data/projects.json  THE ONLY FILE to edit when adding a project
 og-image.png        social preview image (1200x630)
+_og.html            source page used to render og-image.png
 favicon.svg         site icon
 ```
 
