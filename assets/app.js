@@ -253,7 +253,7 @@
         }
       })
       .catch(function () {
-        certsList.innerHTML = '<p class="noscript-note">Certified in Business Intelligence & Data Analysis (eyouth), Generative AI (CIB), Excel (Edraak), plus ITIDA, TIEC, Creativa and Nile University programs.</p>';
+        certsList.innerHTML = '<p class="noscript-note">Certified in Data Analytics (NTI/ITIDA), Business Intelligence & Data Analysis (eyouth), and Generative AI (CIB).</p>';
       });
   }
 })();
