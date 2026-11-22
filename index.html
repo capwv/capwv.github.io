@@ -88,6 +88,9 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--cyan);outline-offse
 @media(max-width:350px){.hero-name{font-size:4.4rem}.skills-grid{grid-template-columns:1fr}.skill-card h3{min-height:0}.hero-eyebrow{font-size:.52rem}.section-head h2{font-size:2rem}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}html{scroll-behavior:auto}}
 
+html{overflow-x:clip}
+@media(max-width:920px){.nav-links{visibility:hidden}.nav-links.open{visibility:visible}body:has(.nav-links.open){overflow:hidden}}
+@media(max-width:680px){.hero{overflow:hidden}}
 </style>
 </head>
 <body>
