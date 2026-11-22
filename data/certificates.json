@@ -1,0 +1,11 @@
+[
+  { "title": "Business Intelligence & Data Analysis", "issuer": "eyouth x LINK", "date": "May 2026", "image": "assets/img/cert-eyouth-bi.jpg" },
+  { "title": "Generative AI Summer Internship", "issuer": "CIB Egypt", "date": "Jul 2026", "image": "assets/img/cert-cib-genai.jpg" },
+  { "title": "LinkedIn Ninja Workshop", "issuer": "ITIDA - TIEC - Creativa", "date": "Jun 2026", "image": "assets/img/cert-linkedin-ninja.jpg" },
+  { "title": "Freelance Success Path Program", "issuer": "ITIDA - TIEC - AMIT", "date": "Apr 2026", "image": "assets/img/cert-freelance-path.jpg" },
+  { "title": "Governance & Digital Transformation Ambassadors", "issuer": "Nile University", "date": "Feb 2026", "image": "assets/img/cert-nile-gda.jpg" },
+  { "title": "InnovEgypt Program", "issuer": "ITIDA - TIEC", "date": "Feb 2026", "image": "assets/img/cert-innovegypt.jpg" },
+  { "title": "ITIDA Gigs Freelance Program", "issuer": "ITIDA - eyouth", "date": "Jan 2026", "image": "assets/img/cert-itida-gigs.jpg" },
+  { "title": "Mastering Excel Specialization", "issuer": "Edraak", "date": "Sep 2025", "image": "assets/img/cert-edraak-excel.jpg" },
+  { "title": "Building Dashboards Using Excel", "issuer": "Edraak", "date": "Sep 2025", "image": "assets/img/cert-edraak-dashboards.jpg" }
+]

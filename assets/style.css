@@ -193,3 +193,28 @@ body{
   html{scroll-behavior:auto}
   .reveal{opacity:1;transform:none}
 }
+
+/* ---------- project images ---------- */
+.project-img{grid-column:1/-1;display:block;margin:-2.2rem -2.2rem 1.3rem;border-bottom:1px solid var(--card-border);overflow:hidden;position:relative;z-index:1}
+.project-img img{width:100%;height:300px;object-fit:cover;object-position:top;display:block;transition:transform .5s ease}
+.project-card:hover .project-img img{transform:scale(1.03)}
+
+/* ---------- certificates ---------- */
+.certs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem}
+.cert-card{background:var(--card);border:1px solid var(--card-border);border-radius:var(--radius);overflow:hidden;transition:transform .3s,border-color .3s,box-shadow .3s;backdrop-filter:blur(6px)}
+.cert-card:hover{transform:translateY(-5px);border-color:rgba(139,92,246,.5);box-shadow:0 22px 50px -28px rgba(139,92,246,.35)}
+.cert-card a{display:block;overflow:hidden}
+.cert-card img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;transition:transform .5s ease}
+.cert-card:hover img{transform:scale(1.04)}
+.cert-info{padding:1rem 1.2rem 1.2rem}
+.cert-title{font-family:'Space Grotesk',sans-serif;font-size:.98rem;font-weight:600;line-height:1.35;margin-bottom:.25rem}
+.cert-meta{font-size:.8rem;color:var(--muted)}
+
+@media (max-width:860px){
+  .certs-grid{grid-template-columns:repeat(2,1fr)}
+  .project-img{margin:-1.7rem -1.5rem 1.1rem}
+  .project-img img{height:210px}
+}
+@media (max-width:560px){
+  .certs-grid{grid-template-columns:1fr}
+}

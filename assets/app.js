@@ -103,6 +103,22 @@
         var card = document.createElement('article');
         card.className = 'project-card reveal';
 
+        if (p.image) {
+          var imgLink = document.createElement('a');
+          imgLink.className = 'project-img';
+          imgLink.href = p.url;
+          imgLink.target = '_blank';
+          imgLink.rel = 'noopener';
+          imgLink.setAttribute('aria-label', 'View ' + p.title);
+          imgLink.title = 'View ' + p.title;
+          var img = document.createElement('img');
+          img.src = p.image;
+          img.alt = p.title;
+          img.loading = 'lazy';
+          imgLink.appendChild(img);
+          card.appendChild(imgLink);
+        }
+
         var body = document.createElement('div');
         var idx = document.createElement('p');
         idx.className = 'project-idx';
@@ -179,4 +195,65 @@
     .catch(function () {
       list.innerHTML = '<p class="noscript-note">Projects: SAMS Compass (capwv.github.io/SAMS-Compass) and SAMS-MIS (capwv.github.io/SAMS-MIS).</p>';
     });
+
+  /* ---------- certificates rendered from data/certificates.json ---------- */
+  var certsList = document.getElementById('certsList');
+  if (certsList) {
+    fetch('data/certificates.json')
+      .then(function (r) { return r.json(); })
+      .then(function (certs) {
+        certs.forEach(function (c) {
+          var card = document.createElement('article');
+          card.className = 'cert-card reveal';
+
+          var a = document.createElement('a');
+          a.href = c.image;
+          a.target = '_blank';
+          a.rel = 'noopener';
+          a.setAttribute('aria-label', 'View certificate: ' + c.title);
+          a.title = c.title;
+
+          var img = document.createElement('img');
+          img.src = c.image;
+          img.alt = c.title + ' - ' + c.issuer;
+          img.loading = 'lazy';
+          a.appendChild(img);
+          card.appendChild(a);
+
+          var info = document.createElement('div');
+          info.className = 'cert-info';
+          var t = document.createElement('h3');
+          t.className = 'cert-title';
+          t.textContent = c.title;
+          var m = document.createElement('p');
+          m.className = 'cert-meta';
+          m.textContent = c.issuer + ' · ' + c.date;
+          info.appendChild(t);
+          info.appendChild(m);
+          card.appendChild(info);
+
+          certsList.appendChild(card);
+        });
+
+        var newCerts = certsList.querySelectorAll('.reveal');
+        if (reduceMotion) {
+          newCerts.forEach(function (el) { el.classList.add('in'); });
+        } else if ('IntersectionObserver' in window) {
+          var cio = new IntersectionObserver(function (entries) {
+            entries.forEach(function (en) {
+              if (en.isIntersecting) {
+                en.target.classList.add('in');
+                cio.unobserve(en.target);
+              }
+            });
+          }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+          newCerts.forEach(function (el) { cio.observe(el); });
+        } else {
+          newCerts.forEach(function (el) { el.classList.add('in'); });
+        }
+      })
+      .catch(function () {
+        certsList.innerHTML = '<p class="noscript-note">Certified in Business Intelligence & Data Analysis (eyouth), Generative AI (CIB), Excel (Edraak), plus ITIDA, TIEC, Creativa and Nile University programs.</p>';
+      });
+  }
 })();
