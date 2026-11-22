@@ -16,23 +16,5 @@
     "issuer": "CIB Egypt",
     "date": "Jul 2026",
     "image": "assets/img/cert-cib-genai.jpg"
-  },
-  {
-    "title": "Freelance Success Path Program",
-    "issuer": "ITIDA - TIEC - AMIT",
-    "date": "Apr 2026",
-    "image": "assets/img/cert-freelance-path.jpg"
-  },
-  {
-    "title": "Mastering Excel Specialization",
-    "issuer": "Edraak",
-    "date": "Sep 2025",
-    "image": "assets/img/cert-edraak-excel.jpg"
-  },
-  {
-    "title": "Building Dashboards Using Excel",
-    "issuer": "Edraak",
-    "date": "Sep 2025",
-    "image": "assets/img/cert-edraak-dashboards.jpg"
   }
 ]
