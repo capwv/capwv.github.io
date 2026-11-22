@@ -1,0 +1,18 @@
+[
+  {
+    "title": "SAMS Compass",
+    "badge": "Flagship",
+    "description": "A major-guidance platform for Sadat Academy students: every major broken down into real career paths with verified Egyptian salary ranges, a self-assessment, and an installable offline-first experience. Built end to end and shipped to campus.",
+    "stat": "500+ students",
+    "tags": ["HTML", "CSS", "JavaScript", "PWA", "Data Research"],
+    "url": "https://capwv.github.io/SAMS-Compass/"
+  },
+  {
+    "title": "SAMS-MIS",
+    "badge": "",
+    "description": "The review hub for MIS courses at the academy's Assiut branch: summaries, question banks and mock exams for every subject, organized so students can find anything in seconds.",
+    "stat": "150+ students",
+    "tags": ["HTML", "CSS", "JavaScript", "Content Platform"],
+    "url": "https://capwv.github.io/SAMS-MIS/"
+  }
+]

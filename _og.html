@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:1200px;height:630px;overflow:hidden}
+  body{
+    background:#05070d;
+    font-family:'Inter',sans-serif;
+    color:#e8edf7;
+    position:relative;
+    display:flex;flex-direction:column;justify-content:center;
+    padding:0 90px;
+  }
+  .orb{position:absolute;border-radius:50%;filter:blur(100px)}
+  .a{width:480px;height:480px;top:-180px;left:-120px;background:rgba(34,211,238,.22)}
+  .b{width:520px;height:520px;bottom:-240px;right:-140px;background:rgba(139,92,246,.26)}
+  .c{width:380px;height:380px;bottom:-160px;left:38%;background:rgba(244,114,182,.14)}
+  .grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);background-size:56px 56px;mask-image:radial-gradient(ellipse 90% 80% at 50% 40%,#000 20%,transparent 78%);-webkit-mask-image:radial-gradient(ellipse 90% 80% at 50% 40%,#000 20%,transparent 78%)}
+  .content{position:relative}
+  .eyebrow{display:flex;align-items:center;gap:12px;margin-bottom:26px}
+  .dot{width:10px;height:10px;border-radius:50%;background:#22d3ee;box-shadow:0 0 14px rgba(34,211,238,.9)}
+  .eyebrow span{font-size:22px;font-weight:600;letter-spacing:.22em;color:#67e8f9}
+  h1{font-family:'Space Grotesk',sans-serif;font-size:104px;font-weight:700;letter-spacing:-.02em;line-height:1;margin-bottom:22px}
+  .grad{background:linear-gradient(92deg,#22d3ee,#8b5cf6 55%,#f472b6);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .sub{font-family:'Space Grotesk',sans-serif;font-size:36px;font-weight:600;color:#aab8d0;margin-bottom:34px}
+  .chips{display:flex;gap:14px;margin-bottom:44px}
+  .chip{font-size:21px;font-weight:500;color:#93a0b8;border:1.5px solid rgba(255,255,255,.16);background:rgba(255,255,255,.04);padding:8px 22px;border-radius:999px}
+  .foot{display:flex;justify-content:space-between;align-items:center;font-size:23px}
+  .url{color:#67e8f9;font-weight:600}
+  .loc{color:#67738c}
+  .bar{position:absolute;left:90px;top:calc(50% - 178px);width:5px;height:52px;background:linear-gradient(180deg,#22d3ee,#8b5cf6,#f472b6);border-radius:3px}
+</style>
+</head>
+<body>
+  <div class="orb a"></div><div class="orb b"></div><div class="orb c"></div>
+  <div class="grid"></div>
+  <div class="content">
+    <div class="eyebrow"><div class="dot"></div><span>PORTFOLIO</span></div>
+    <h1>Ahmed <span class="grad">Wael</span></h1>
+    <div class="sub">Data Analytics &middot; MIS &middot; Product Builder</div>
+    <div class="chips">
+      <div class="chip">SQL</div><div class="chip">Power BI</div><div class="chip">Python</div><div class="chip">Excel</div>
+      <div class="chip">650+ students reached</div>
+    </div>
+    <div class="foot"><span class="url">capwv.github.io</span><span class="loc">Assiut, Egypt</span></div>
+  </div>
+</body>
+</html>
